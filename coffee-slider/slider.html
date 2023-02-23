@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>slider</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<div class="parent box">
+    <!--    navbar-->
+    <nav class="fixed-top mt-2 navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex flex-row justify-content-between ">
+            <div class="d-flex flex-row col-3 col-sm-2 col-md-1 justify-content-around ms-3">
+                <a class="social-links-in-nav p-sm-4 p-2" href="#"><i
+                        class="social-links-in-nav-icon fab fa-youtube text-secondary"></i></a>
+                <a class="social-links-in-nav p-sm-4 p-2" href="#"><i
+                        class="social-links-in-nav-icon fab fa-instagram text-secondary"></i></a>
+                <a class="social-links-in-nav p-sm-4 p-2" href="#"><i
+                        class="social-links-in-nav-icon fab fa-facebook-f text-secondary"></i></a>
+            </div>
+            <div class="col-3 d-flex flex-row justify-content-end">
+                <a class="navbar-brand fw-bold" href="#">Batsam</a>
+                <img class="brand-img" src="img/gen_85.png">
+            </div>
+        </div>
+    </nav>
+    <!--    end navbar-->
+    <!--    note-1 : each slide should contains description-slide div , slider-btn div and img-slide div-->
+    <!--    note-2 : the classes 1-slider-description-parent
+                                 2-slider-btn 3-img-slide
+                                 4-coffee-main-png
+                                 5-upper-leaf
+                                 6-upper-bean
+                                 7-coffee-shadow-png
+                                 8-coffee-spoon-png
+                                 9-slider-main-btns
+                                 10-coffee-png-1to6
+                     are used in js file don't change the names
+            note-3 = maximum count of slides are 7 =======> important
+     -->
+    <!--    slider-->
+    <div class="main-slider d-flex flex-row flex-wrap">
+        <!--        slider right section : contains descriptions-->
+        <div class="slider-right-section-parent d-flex flex-row align-items-sm-center col-sm-5 col-12 bg-light- order-sm-0 order-2">
+            <!--            slider description parent : contains description slides-->
+            <div class="slider-description-parent d-flex flex-row align-items-center">
+                <!--                slide : description slide 1-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">هات چاکلت</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 1 -->
+                <!--                slide : description slide 2-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">کاپوچینو</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 2 -->
+                <!--                slide : description slide 3-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">قهوه سیاه</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 3 -->
+                <!--                slide : description slide 4 -->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">3 در 1</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 4 -->
+                <!--                slide : description slide 5-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">2 در 1</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 5 -->
+                <!--                slide : description slide 6-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">موکا</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 6 -->
+                <!--                slide : description slide 7-->
+                <div class="description-slide">
+                    <div class="slider-description d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-11 col-sm-8 col-lg-7 d-flex flex-column gap-3">
+                            <h2 class="fw-bold">موکا</h2>
+                            <p class="text-justify">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و</p>
+                            <a href="#" class="my-btn rounded col-5 col-sm-6 col-md-5 align-self-end mt-4">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <!--                end slide : description slide 6 -->
+                <!--                slide : description slide 7-->
+            </div>
+            <!--end slider right section : contains descriptions-->
+            <!--slider main btn section-->
+            <div class="slider-main-btns float-sm-end d-flex flex-sm-column flex-row justify-content-center col-12 col-sm-1">
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/first-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/second-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/fourth-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/third-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/second-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/second-btn.jpg">
+                <!-- end slider button-->
+                <!-- slider button-->
+                <img class="slider-btn rounded-circle" src="img/second-btn.jpg">
+                <!-- end slider button-->
+            </div>
+            <!--end slider main btn section-->
+            <!--slider next and prev btn section-->
+            <div class="next-prev-parent-div d-flex flex-sm-column flex-row justify-content-sm-end align-items-sm-start  align-items-end p-sm-5 p-3 gap-4">
+                <div>
+                    <i class="prev d-none d-sm-inline fas fa-angle-up p-3"></i>
+                    <i class="prev d-sm-none d-inline fas fa-angle-right p-3"></i>
+                </div>
+                <div>
+                    <i class="next d-none d-sm-inline fas fa-angle-down p-3"></i>
+                    <i class="next d-sm-none d-inline fas fa-angle-left p-3"></i>
+                </div>
+            </div>
+            <!--end slider next and prev btn section-->
+        </div>
+        <!--        end slider right section : contains description slides-->
+        <!--        slider left section : contains image slides-->
+        <div class="coffee-img-section col-12 col-sm-7 order-0">
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face bg-light"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/pngwing.comp.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/hot-chocolate-300x300.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/pn13630314.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/Cappuccino-300x300.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/leaf.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/gen-contact-image-18.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/leaf.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/3-in-1.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face bg-secondary"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/leaf.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/2-in-1-1.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face bg-secondary"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/leaf.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/mocha-cup.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+            <div class="img-slide">
+                <div class="back-face bg-secondary"></div>
+                <div class="coffee-img d-flex flex-column">
+                    <div>
+                        <img class="upper-bean float-end" src="img/bean1.png">
+                        <img class="upper-leaf float-start" src="img/leaf.png">
+                    </div>
+                    <div class="mt-5 d-flex flex-row align-items-center justify-content-center coffee-first-img container h-100">
+                        <div class="coffee-and-shadow offset-1">
+                            <div class="coffee-div">
+                                <img class="coffee-shadow-png" src="img/cup-shadow-1.png">
+                            </div>
+                            <div class="shadow-div">
+                                <img class="coffee-main-png" src="img/mocha-cup.png">
+                            </div>
+                        </div>
+                        <img class="coffee-spoon-png" src="img/latte-spoon-1.png">
+                    </div>
+                    <img class="coffee-png-1 " src="img/bean1.png">
+                    <img class="coffee-png-2" src="img/bean2.png">
+                    <img class="coffee-png-3" src="img/bean3.png">
+                    <img class="coffee-png-4" src="img/bean2.png">
+                    <img class="coffee-png-5" src="img/bean3.png">
+                    <img class="coffee-png-6" src="img/bean1.png">
+                </div>
+            </div>
+            <!--end img slide -->
+            <!--img slide -->
+        </div>
+        <!--        end slider left section : contains image slides-->
+    </div>
+</div>
+<!--end slider-->
+<script rel="script" src="js/jquery-3.6.0.min.js"></script>
+<script rel="script" src="js/slider.js"></script>
+</body>
+</html>

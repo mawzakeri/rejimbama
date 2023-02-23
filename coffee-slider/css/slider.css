@@ -1,0 +1,756 @@
+
+.parent::-moz-selection {
+    background: none;
+}
+
+.parent::selection {
+    background: none;
+}
+
+html body {
+    font-family: IRANSansWeb;
+}
+
+.bg-light- {
+    background: #e8e1d9;
+}
+
+.parent {
+    width: 100%;
+    overflow: hidden;
+}
+
+.social-links-in-nav {
+    transition: .2s;
+    z-index: 1000;
+}
+
+.social-links-in-nav:hover,
+.social-links-in-nav:active {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.slider-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.my-btn {
+    color: #f0f0f0;
+    text-decoration: none;
+    background: #2c3034;
+    text-align: center;
+    padding: 13px 15px;
+    font-size: 10px;
+    transition: .3s;
+}
+
+.next-prev-parent-div {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+}
+
+.my-btn:hover {
+    background: #c15880;
+    color: white;
+    transition: .3s;
+}
+
+.brand-img {
+    width: 90px;
+    height: 30px;
+}
+
+.slider-right-section-parent {
+    position: relative;
+}
+
+.slider-description-parent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-description {
+    width: 100%;
+    height: 100%;
+}
+
+.description-slide {
+    position: absolute;
+    z-index: 1;
+}
+
+.slider-main-btns {
+    position: absolute;
+    z-index: 2;
+    margin-top: -5%;
+}
+
+.slider-btn {
+    width: 35px;
+    height: 35px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    outline: 4px solid #e8e1d9;
+}
+
+.coffee-img-section {
+    position: relative;
+    background: url("../img/bg-1.jpg");
+    /*background: #e8e1d9;*/
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.coffee-img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.coffee-and-shadow {
+    position: relative;
+    left: 10%;
+    width: 290px;
+}
+
+.coffee-main-png {
+    width: 80%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-radius: 0 0 50% 50%;
+}
+
+.coffee-shadow-png {
+    width: 80%;
+    height: 110%;
+    opacity: 0;
+    margin-top: -10%;
+    margin-right: 10%;
+}
+
+.coffee-div {
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;
+    left: 20px;
+}
+
+.shadow-div {
+    z-index: 10;
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+.coffee-spoon-png {
+    display: none;
+}
+
+.back-face {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffc107;
+    opacity: 0;
+}
+
+.upper-bean {
+    position: absolute;
+    left: 15%;
+    margin-top: 100px;
+    width: 17px;
+    transform: rotate(90deg);
+}
+
+.upper-leaf {
+    z-index: -2;
+    position: absolute;
+    width: 80px;
+    margin-right: 50px;
+    margin-top: 50px;
+    animation-fill-mode: forwards;
+}
+
+.coffee-png-1 {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    width: 25px;
+    transform: scale(.8) rotate(90deg);
+}
+
+.coffee-png-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 28%;
+    width: 25px;
+    transform: scale(.8) rotate(90deg);
+}
+
+.coffee-png-3 {
+    position: absolute;
+    bottom: 27%;
+    right: 5%;
+    width: 25px;
+    transform: scale(.8) rotate(90deg);
+}
+
+.coffee-png-4 {
+    position: absolute;
+    bottom: 20%;
+    right: 13%;
+    width: 22px;
+    transform: scale(.8) rotate(90deg);
+}
+
+.coffee-png-5 {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    width: 25px;
+    transform: scale(.8) rotate(140deg);
+}
+
+.coffee-png-6 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 23px;
+    transform: scale(.8) rotate(30deg);
+}
+
+.main-slider {
+    height: 520px !important;
+}
+
+@media (max-height: 450px) {
+    @media (min-width: 576px) {
+        .coffee-img {
+            transform: scale(.7);
+            transition: 1s;
+        }
+
+        .coffee-and-shadow {
+            transform: scale(.9);
+        }
+
+        .description-slide {
+            transform: scale(.7);
+        }
+
+        .upper-leaf {
+            transform: scale(.6);
+        }
+
+        .coffee-spoon-png {
+            transform: scale(.7);
+        }
+
+        .slider-main-btns {
+            transform: scale(.7);
+        }
+    }
+
+}
+
+@media (min-width: 576px) {
+    .slider-main-btns {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+    }
+
+    .slider-btn {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .coffee-and-shadow {
+        position: relative;
+        right: 7%;
+        width: 290px;
+    }
+
+    .coffee-main-png {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .coffee-shadow-png {
+        width: 80%;
+        height: 110%;
+        opacity: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .coffee-div {
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: 40%;
+        left: 20px;
+    }
+
+    .shadow-div {
+        z-index: 10;
+        position: relative;
+        width: 90%;
+        height: 100%;
+    }
+
+    .coffee-spoon-png {
+        display: none;
+    }
+
+    .bean-img-section {
+        position: relative;
+        direction: ltr;
+    }
+
+    .coffee-png-1 {
+        position: absolute;
+        bottom: 100px;
+        left: 15%;
+        width: 40px;
+        transform: scale(.8) rotate(90deg);
+    }
+
+    .coffee-png-2 {
+        position: absolute;
+        bottom: 40px;
+        left: 28%;
+        width: 40px;
+        transform: scale(.8) rotate(90deg);
+    }
+
+    .coffee-png-3 {
+        position: absolute;
+        bottom: 60px;
+        right: 44%;
+        width: 40px;
+        transform: scale(.8) rotate(90deg);
+    }
+
+    .coffee-png-4 {
+        position: absolute;
+        bottom: 20px;
+        right: 30%;
+        width: 40px;
+        transform: scale(.8) rotate(90deg);
+    }
+
+    .coffee-png-5 {
+        position: absolute;
+        bottom: 100px;
+        right: 25%;
+        width: 40px;
+        transform: scale(.8) rotate(140deg);
+    }
+
+    .coffee-png-6 {
+        position: absolute;
+        bottom: 150px;
+        right: 15%;
+        width: 40px;
+        transform: scale(.8) rotate(30deg);
+    }
+
+    .upper-bean {
+        position: absolute;
+        left: 30%;
+        margin-top: 100px;
+        width: 30px;
+        transform: rotate(90deg);
+    }
+
+    .upper-leaf {
+        z-index: -2;
+        position: absolute;
+        width: 130px;
+        margin-right: 50px;
+        margin-top: 50px;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+@media (min-width: 991px) {
+    .main-slider {
+        height: 600px !important;
+    }
+    .coffee-spoon-png {
+        width: 100px;
+        margin-right: 80px;
+        display: block;
+    }
+
+    .coffee-main-png {
+        width: 130%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .coffee-shadow-png {
+        width: 80%;
+        height: 110%;
+        opacity: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .coffee-div {
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: 40%;
+        left: 20px;
+    }
+
+    .shadow-div {
+        z-index: 10;
+        position: relative;
+        width: 90%;
+        height: 100%;
+    }
+
+    .slider-main-btns {
+        position: absolute;
+        left: -4%;
+        z-index: 2;
+    }
+
+    .coffee-png-1 {
+        position: absolute;
+        bottom: 10%;
+        left: 35%;
+        width: 40px;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    .coffee-png-2 {
+        position: absolute;
+        bottom: 40px;
+        left: 48%;
+        width: 40px;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    .coffee-png-3 {
+        position: absolute;
+        bottom: 90px;
+        right: 34%;
+        width: 40px;
+        transform: rotate(90deg);
+        z-index: -1;
+
+    }
+
+    .coffee-png-4 {
+        position: absolute;
+        bottom: 70px;
+        right: 17%;
+        width: 40px;
+        transform: rotate(90deg);
+        z-index: -1;
+
+    }
+
+    .coffee-png-5 {
+        position: absolute;
+        bottom: 15px;
+        right: 25%;
+        width: 40px;
+        transform: rotate(140deg);
+        z-index: -1;
+
+    }
+
+    .coffee-png-6 {
+        position: absolute;
+        bottom: 150px;
+        right: 10%;
+        width: 40px;
+        transform: rotate(30deg);
+        z-index: -1;
+
+    }
+
+    .upper-bean {
+        position: absolute;
+        left: 30%;
+        margin-top: 100px;
+        width: 30px;
+        transform: rotate(90deg);
+    }
+
+    .upper-leaf {
+        z-index: -2;
+        position: absolute;
+        width: 130px;
+        margin-right: 150px;
+        margin-top: 100px;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(170px);
+        opacity: 50%;
+        padding: 0 0;
+    }
+    50% {
+        padding: 30px 0;
+    }
+    100% {
+        padding: 0;
+    }
+}
+
+@keyframes animate-cup {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    100% {
+        transform: translateY(200%) translateX(20%) rotate(180deg);
+    }
+}
+
+@keyframes animate-shadow {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    100% {
+        transform: translateY(200%) translateX(20%);
+    }
+}
+
+@keyframes animate-cup-2 {
+    0% {
+        transform: translateY(-200%) translateX(-40%) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animate-upper-bean {
+    0% {
+        transform: translateX(-500px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animate-spoon {
+    0% {
+        transform: translateY(-500px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animate-upper-leaf {
+    0% {
+        transform: translateY(-500px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animate-backface {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animate-bean {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(90deg);;
+    }
+}
+
+@keyframes animate-bean-5 {
+    0% {
+        transform: translateX(-500px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(140deg);;
+    }
+}
+
+@keyframes animate-bean-6 {
+    0% {
+        transform: translateX(-500px) rotate(-90deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(30deg);;
+    }
+}
+
+@keyframes animate-shadow-2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-upper-bean {
+    animation-name: animate-upper-bean;
+    animation-duration: 1s;
+    transition: 1s ease-in;
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.animate-upper-leaf {
+    animation-name: animate-upper-leaf;
+    animation-duration: 1s;
+    transition: 1s ease-in;
+    transform: translateY(0);
+}
+
+.animate-shadow {
+    animation-name: animate-shadow;
+    animation-duration: 1.5s;
+    transition: 1s ease-in;
+    animation-fill-mode: forwards;
+    color: #FFFFFF;
+}
+
+.animate-shadow-2 {
+    animation-name: animate-shadow-2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.animate-spoon {
+    animation-name: animate-spoon;
+    animation-duration: 1s;
+}
+
+.animate-cup {
+    animation-name: animate-cup;
+    animation-duration: 1s;
+    transition: 1s ease-in;
+}
+
+.animate-cup-2 {
+    animation-name: animate-cup-2;
+    animation-duration: 1s;
+    transition: 1s ease-in;
+}
+
+.description-slide div p {
+    margin: 50px 0;
+    transition: 1s ease-out;
+}
+
+.animate {
+    animation-name: animate;
+    animation-duration: 1s;
+    transition: 1s ease-in;
+}
+
+.animate div p {
+    margin: 0 0;
+    transition: .9s ease-in;
+}
+
+.btn-active {
+    outline: 4px solid #e8e1d9;;
+}
+
+.outline0 {
+    outline: 0;
+}
+
+.animate-bean-1 {
+    animation-name: animate-bean;
+    animation-duration: 1.1s;
+    transition: 1s ease-in;
+}
+
+.animate-bean-2 {
+    animation-name: animate-bean;
+    animation-duration: 1.2s;
+    transition: 1s ease-in;
+}
+
+.animate-bean-3 {
+    animation-name: animate-bean;
+    animation-duration: 1.3s;
+    transition: 1s ease-in;
+}
+
+.animate-bean-4 {
+    animation-name: animate-bean;
+    animation-duration: 1.4s;
+    transition: 1s ease-in;
+}
+
+.animate-bean-5 {
+    animation-name: animate-bean-5;
+    animation-duration: 1.5s;
+    transition: 1s ease-in;
+}
+
+.animate-bean-6 {
+    animation-name: animate-bean-6;
+    animation-duration: 1.6s;
+    transition: 1s ease-in;
+}
+
+.animate-backface {
+    animation-name: animate-backface;
+    animation-duration: 1.4s;
+    transition: 1s ease-in;
+}
+
+.next {
+    cursor: pointer;
+}
+
+.prev {
+    cursor: pointer;
+}
